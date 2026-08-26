@@ -1,4 +1,4 @@
-# Power Bi Project
+# Power BI Project
 
 AI Impact on Jobs 2030: Workforce Vulnerability & Upskilling Outlook
 Project Overview:
