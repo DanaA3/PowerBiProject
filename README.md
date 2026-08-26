@@ -9,11 +9,19 @@ This project evaluates workforce risk exposure, compensation patterns, demand sc
 
 ---
 
-##  Dataset Details & Data Architecture
-* **Dataset:** `AI_Impact_on_Jobs_2030.csv` (Kaggle)
-* **Data Volume:** 773 records across 20 attributes
-* **Model Structure:** Star Schema (`Fact_Employees` fact table linked to `Bridge_Skills` dimension table)
-* **Core Attributes:** `AI_Replacement_Risk`, `Job_Growth_2030`, `Average_Salary_USD`, `Future_Demand_Score`, `Automation_Level`, `Upskilling_Needed`, `AI_Tool_Usage`, `Performance_Score`, `Education_Level`
+##  Dataset Details & Data Preprocessing
+
+* **Source Platform:** Kaggle (`AI_Impact_on_Jobs_2030.csv`)
+* **Raw Data Volume:** 3,000 employee records across 20 raw attributes.
+* **Processed Data Architecture:** Star Schema consisting of:
+  * `Fact_Employees` (773 curated records with 20 analytical fields).
+  * `Bridge_Skills` (Normalized dimension table mapping many-to-many skill distributions per employee).
+
+###  Data Cleaning & Pipeline Transformations
+1. **Dimensional Normalization:** Extracted multi-valued string lists from `Required_Skills` into a dedicated `Bridge_Skills` table to enable granular skill-gap filtering.
+2. **Feature Engineering:** Derived `Salary_Category` to evaluate high-income vs. baseline salary distribution across international markets.
+3. **Data Quality & Refinement:** Standardized field header formats (`Employee_ID` → `EmployeeID`) and removed redundant non-correlated entries for dashboard query optimization.
+4. **Custom DAX Layer:** Formulated measures for `Avg AI Risk`, `Upskilling Rate %`, `Demand Score Formatting`, and `Net Outlook Score`.
 
 ---
 
