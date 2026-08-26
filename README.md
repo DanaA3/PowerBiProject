@@ -25,10 +25,12 @@ This project evaluates workforce risk exposure, compensation patterns, demand sc
 
 ---
 
-##  Key Metrics & High-Level Findings
-* **Widespread Exposure:** Average AI replacement risk sits at **51.16%**, with **49.68%** of analyzed roles requiring immediate upskilling.
-* **Education Vulnerability:** Highest upskilling demand occurs at the **PhD level (54.55%)**, proving that high education levels do not guarantee immunity from AI automation.
-* **AI Tool Synergy: Employees utilizing AI tools at Moderate (3.55 / 5.0) and High (3.54 / 5.0) levels achieve higher performance scores compared to Low-usage peers (3.45 / 5.0).
+### Key Metrics & High-Level Findings
+
+* **Widespread Exposure:** Average AI replacement risk sits at 51.16%, with 49.68% of analyzed roles requiring immediate upskilling.
+* **Education Vulnerability:** Highest upskilling demand occurs at the PhD level (54.55%), proving high education levels do not guarantee immunity from AI automation.
+* **AI Tool Synergy:** Moderate (3.55 / 5.0) and High (3.54 / 5.0) AI tool adoption yields consistently higher performance scores than Low usage (3.45 / 5.0).
+* **Macro Net Outlook:** Net Outlook Score averages -33.39, balancing expected job growth (17.78%) against baseline replacement risk (51.16%).
 
 ---
 
